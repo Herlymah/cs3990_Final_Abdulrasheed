@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs3990-Final</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #itemsGroups {
+            background-color: #f0d0a0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #groups {
+            width: 40%;
+            padding-left: 20px;
+        }
+        #groups li {
+            cursor: pointer;
+            padding: 5px;
+            margin: 5px 0;
+            color:  #FFF8DC;           
+            background-color: #201004; 
+            list-style-type: disc;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            white-space: nowrap;
+            padding: 5px 10px;
+            
+        }
+
+        #itemsGallery {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #f0d0a0;
+            padding: 10px;
+        }
+        .item {
+            background-color: #6b4931;
+            margin: 5px;
+            padding: 10px;
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            color: white;
+            cursor: pointer;
+        }
+        #itemDescr {
+            background-color: #f0d0a0;
+            padding: 10px;
+            min-height: 50px;
+            margin-top: 10px;
+        }
+    </style> 
+</head>
+<body>
+    <div id="app">
+        <div id="itemsGroups">
+            <h3>Available categories of items:</h3>
+            <ul id="groups"></ul>
+        </div>
+        <article id="itemsGallery"></article>
+        <section id="itemDescr"></section>
+    </div>
+
+   
+    
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
